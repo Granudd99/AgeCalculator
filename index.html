@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="calculator">
+      <label class="main">
+        <div class="item1"> <p>DAY</p> <input type="number" id="dag" placeholder="  DD" pattern="[0-9]{1,2}" required> </div>
+        <p id="error1">Most be valid day</p>
+        <div class="item2"> <p>MONTH</p> <input type="number" id="mon" placeholder="  MM" max="12"> </div>
+        <p id="error2">Most be valid Month</p>
+        <div class="item3"> <p>YEARS OLD</p> <input type="number" id="year" placeholder="  YYYY" max="2023"> </div>
+        <p id="error3">Most be valid year</p>
+      </label>
+        <div class="line"></div>
+          <button type="submit" class="button" id="cal"> <img src="assets/images/icon-arrow.svg" alt=""> </button>
+      <div class="nere">
+        <p> <span id="y">--</span> born</p>
+        <p> <span id="m">--</span> months old</p>
+        <p> <span id="d">--</span> days old</p>
+      </div>
+    </div>
+  </div>
+
+  
+
+ 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Nicklas</a>.
+  </div>
+
+<script src="index.js"></script>
+</body>
+</html>
+
+

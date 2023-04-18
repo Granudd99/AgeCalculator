@@ -1,0 +1,182 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+
+.calculator {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  position: absolute;
+  top: 150px;
+  border-radius: 8px;
+  border-bottom-right-radius: 100px;
+  box-shadow: 5px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+.main {
+  display: flex;
+  padding-left: 50px;
+  padding-top: 25px;
+  gap: 15px;
+}
+
+.item {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.nere {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-bottom: 25px;
+}
+
+.nere {
+  font-size: 55px;
+  font-weight: bolder;
+}
+
+.nere span {
+  color: hsl(259, 100%, 65%);
+}
+
+.line {
+  height: 1px;
+  background-color: black;
+  margin: 50px 50px;
+}
+
+
+.button {
+  width: 70px;
+  height: 70px;
+  background-color: hsl(259, 100%, 65%); 
+  align-self: flex-end;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 104px;
+  right: 50px;
+  border-radius: 50px;
+  border: none;
+}
+
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: white;
+}
+
+.button:active img {
+  filter: invert();
+}
+
+.sub img {
+  width: 100%;
+}
+
+input {
+  height: 40px;
+  width: 170px;
+  border: solid black 1px;
+  border-radius: 5px;
+  padding: 0px 8px;
+  
+}
+
+#error1 {
+  color: red;
+  position: absolute;
+  top: 105px;
+  opacity: 0;
+}
+
+#error2 {
+  color: red;
+  position: absolute;
+  top: 105px;
+  margin-left: 206px;
+  opacity: 0;
+}
+
+#error3 {
+  color: red;
+  position: absolute;
+  top: 105px;
+  margin-left: 412px;
+  opacity: 0;
+}
+
+
+
+
+
+.but {
+  position: fixed; 
+  bottom: 1000px;
+}
+
+
+@media screen and (max-width: 450px) {
+    .calculator {
+      width: 350px;
+      top: 150px;
+    }
+
+    .main {
+      font-size: 8px;
+    }
+
+    .main input {
+      width: 50px;
+    }
+
+    .nere {
+      font-size: 30px;
+    }
+
+    .button {
+      right: 149px;
+    }
+
+    #error1 {
+      top: 90px;
+      font-size: 6px;
+    }
+
+    #error2 {
+      font-size: 6px;
+      margin-left: 86px;
+      top: 90px;
+    }
+
+    #error3 {
+      margin-left: 171px;
+      top: 90px;
+      font-size: 6px;
+    }
+}
+
+
